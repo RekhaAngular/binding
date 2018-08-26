@@ -1,0 +1,16 @@
+<h1><strong>Binding's</strong></h1>
+<h2>One way binding</h2>
+<p>Value of One Way Binding <b>{{title}}</b></p>
+
+<h2>Two Way Binding</h2>
+<input type="text" [(ngModel)]="name" (keyup)="nameValue()">
+<b>{{name}}</b>
+
+<h2>Property Binding</h2>
+<button class="btn btn-success" [disabled]="disabled">Property Binding</button>
+<br>
+
+
+<h2>Event Binding</h2>
+<button class="btn btn-primary" (click)="eventCall()">Event</button><br>
+<b>{{name}}</b>
